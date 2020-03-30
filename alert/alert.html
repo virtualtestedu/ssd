@@ -18,11 +18,10 @@ ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
 var img = new Image();
-src = canvas.toDataURL();
+var src = canvas.toDataURL();
 alert(src)
 img.src=src
 document.body.appendChild(img);
-location.assign(src) 
 </script>
 </body>
 </html>
