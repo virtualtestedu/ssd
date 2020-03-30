@@ -4,14 +4,13 @@
 </head>
 <body>
   <canvas id="myCanvas"></canvas>
-<button onclick="sa()">bas</button>
+<button>bas</button>
 <script>
-function sa(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // get the required parameter
 const param = urlParams.get('product');
-alert(param)}
+alert(param)
  var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ctx.font = "30px Comic Sans MS";
