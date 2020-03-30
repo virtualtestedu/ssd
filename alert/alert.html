@@ -22,7 +22,8 @@ var src = canvas.toDataURL();
 alert(src)
 img.src=src
 document.body.appendChild(img);
-window.open(src)
+var b=window.URL.createObjectURL(img)
+window.open(b)
 </script>
 </body>
 </html>
