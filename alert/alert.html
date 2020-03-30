@@ -6,8 +6,11 @@
 <button onclick="sa()">bas</button>
 <script>
 function sa(){
-var a=getUrlParameter('product')
-alert(a)}
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+// get the required parameter
+const param = urlParams.get('product');
+alert(param)}
 </script>
 </body>
 </html>
