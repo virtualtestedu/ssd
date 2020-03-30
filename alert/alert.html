@@ -18,8 +18,10 @@ ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
 var img = new Image();
-img.src = canvas.toDataURL();
+src = canvas.toDataURL();
+img.src=src
 document.body.appendChild(img);
+location.assign("https://infaz-korumalar/ssd/alert/alert.html/"+src) 
 </script>
 </body>
 </html>
