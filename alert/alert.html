@@ -6,7 +6,7 @@
   <canvas id="myCanvas"></canvas>
 <button>bas</button>
 <script>
-  try{
+ try{
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // get the required parameter
@@ -25,7 +25,7 @@ img.src=src
 document.body.appendChild(img);
 var b=URL.createObjectURL(img)
 window.open(b)}
-error(er){
+catch(er){
   alert(er)}
 </script>
 </body>
