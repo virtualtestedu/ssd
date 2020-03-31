@@ -11,7 +11,6 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // get the required parameter
 const param = urlParams.get('product');
-alert(param)
  var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 ctx.font = "30px Comic Sans MS";
@@ -20,11 +19,9 @@ ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
 var img = new Image();
 var src = canvas.toDataURL();
-alert(src)
 img.src=src
 document.body.appendChild(img);
-var b=URL.createObjectURL(img)
-window.open(b)}
+window.open(src)}
 catch(er){
   alert(er)}
 </script>
