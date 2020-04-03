@@ -5,8 +5,13 @@
 <body>
   <canvas id="myCanvas"></canvas>
 <button>bas</button>
+<style>
+canvas{
+width:100%;
+height: 100%;
+}
+</style>
 <script>
- try{
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 // get the required parameter
@@ -17,13 +22,6 @@ ctx.font = "30px Comic Sans MS";
 ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
-var img = new Image();
-var src = canvas.toDataURL();
-img.src=src
-document.body.appendChild(img);
-window.open(src)}
-catch(er){
-  alert(er)}
 </script>
 </body>
 </html>
