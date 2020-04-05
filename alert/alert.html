@@ -22,6 +22,12 @@ ctx.font = "30px Comic Sans MS";
 ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
+var src=canvas.toDataURL();
+var img=new Image();
+img.src=src;
+document.appendChild(img)
+var w=window.open("")
+w.document.write(image.outerHTML)
 </script>
 </body>
 </html>
