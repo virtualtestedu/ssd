@@ -16,13 +16,8 @@ ctx.font = "30px Comic Sans MS";
 ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx.fillText(param, canvas.width/2, canvas.height/2);
-var src=canvas.toDataURL();
-var img=new Image();
-img.src=src;
-alert(src)
-body.appendChild(img)
-var w=window.open("")
-w.document.write(image.outerHTML)
+var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+window.location.href=image;
 </script>
 </body>
 </html>
