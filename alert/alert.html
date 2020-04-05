@@ -25,7 +25,8 @@ ctx.fillText(param, canvas.width/2, canvas.height/2);
 var src=canvas.toDataURL();
 var img=new Image();
 img.src=src;
-document.appendChild(img)
+alert(src)
+body.appendChild(img)
 var w=window.open("")
 w.document.write(image.outerHTML)
 </script>
